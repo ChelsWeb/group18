@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hangerLogo">
+
+        </div>
+        <button class="toggle-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Your Logo">
+            </div>
+            <ul>
+                <li><a href="Explore.html">Explore</a></li>
+                <li><a href="Favorites.html">Favorites</a></li>
+                <li><a href="MyAccount.html">My Account</a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="RevCont">
+    <div class="seller-info">
+        <img id="sellerImg" src="images/seller.jpg" alt="Seller Image">
+        <div class="seller-details">
+            <h1>Yael Cohen</h1>
+            </div>
+        </div>
+        <h2 class="sellerHeader">Reviews</h2>
+        <div class="reviews">
+            <div class="review">
+                <img id="man" src="images/man1.jpg" alt="Reviewer Image">
+                <div class="review-details">
+                    <div class="review-author">Dor Levi</div>
+                    <div class="review-text">The seller is very nice! I got a product from Yael, for my girlfriend and she loved it!!!</div>
+                    <div class="review-stars">
+                        <img id="stars" src="images/stars.jpg"/>
+                    </div>
+                </div>
+        </div>
+    </div>
+        
+<h2 class="sellerHeader">Add a Review</h2>
+
+<form id="add-review-form">
+    <div>
+        <label for="reviewer-name">Your Name:</label>
+        <input type="text" id="reviewer-name" name="reviewer-name" required>
+    </div>
+    <div>
+        <label for="review-text">Your Review:</label>
+        <textarea id="review-text" name="review-text" required></textarea>
+    </div>
+    
+    <button class="submitBut" type="submit">Submit Review</button>
+</form>
+</div>
+<script src="reviews.js"></script>
+<script src="sideBar.js"></script>
+</body>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registiration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img id="logo" src="images/biglogo.jpg"/>
+    </div>
+    <h2>Registiration</h2>
+    <div class="form">
+
+    <div class="container">
+        <label class="fill">Full Name : </label> 
+        <input class="box" type="text" id="fullName" pattern="[A-Za-z ]+" name="name" placeholder="Enter your Full Name">
+    </div>
+    <br>
+
+    <div class="container">
+            <label class="fill">Email : </label> 
+            <input class="box" type="text" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Enter your E-mail">
+    </div>
+    <br>
+    <div class="container">
+        <label class="fill">Password : </label> 
+        <input class="box" type="text" id="password" name="password" minlength="8" placeholder="Enter your Password">
+    </div>
+    <br>
+    <div class="container">
+        <label class="fill">City : </label> 
+        <input class="box" type="text" id="city" name="city" pattern="[A-Za-z ]+" placeholder="Enter your City">
+    </div>
+    <br>
+    <div class="gender">
+        <label>Gender : </label> 
+        <input class="box" type="checkbox" id="female" name="female" value="female">
+        <label>Female</label>
+        <input class="box" type="checkbox" id="male" name="male" value="male">
+        <label>Male</label>
+    </div>
+    <br>
+    <div class="container" id="butCont">
+        <button  id="signupButton">Sign Up</button>
+    </div>
+</div>
+
+<script src="registiration.js"></script>
+</body>

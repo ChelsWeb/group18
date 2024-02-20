@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="toggle-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/biglogo.jpg" alt="Your Logo">
+            </div>
+            <ul>
+                <li><a href="Explore.html">Explore</a></li>
+                <li><a href="Favorites.html">Favorites</a></li>
+                <li><a href="MyAccount.html">My Account</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="AccountCont">
+        <h1 class="accountHeader">My Account</h1>
+        <div class="form-group">
+            <label class="AccountLabel" for="profile-pic">Add Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image">
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input class="accounText" type="text" id="name" placeholder="Racheli">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="accounText" type="text" id="email" placeholder="racheli@gmail.com">
+        </div>
+        <div class="form-group">
+            <label class="fill">Password: </label> 
+            <input class="accounText" type="text" id="password" name="password" placeholder="password">
+        </div>
+        <button class="AccountBut">Save Changes</button>
+        <a href="UploadProduct.html">
+        <button class="AccountBut" >Upload New Product</button>
+        </a>
+    </div>
+</body>
+<script src="sideBar.js"></script>
+
+</html>

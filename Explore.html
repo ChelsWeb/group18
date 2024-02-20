@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>2 Fashionable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hangerLogo">
+
+        </div>
+        <button class="toggle-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Your Logo">
+            </div>
+            <ul>
+                <li><a href="Explore.html">Explore</a></li>
+                <li><a href="Favorites.html">Favorites</a></li>
+                <li><a href="MyAccount.html">My Account</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ExCont">
+        <h1>Explore</h1>
+    </div>
+    <div class="dropDown">
+    <label for="categories">Choose a category:</label>
+    <select id="category" name="categories">
+        <option value="All">All</option>
+        <option value="Jackets">Jackets</option>
+        <option value="Shirts">Shirts</option>
+        <option value="Sweatshirts">Sweatshirts</option>
+        <option value="Jewelery">Jewelery</option>
+        <option value="Pants">Pants</option>
+    </select>
+    </div>
+    <div class="location">
+        <label for="location">Enter your location:</label>
+        <input type="text" id="locationInput" name="location">
+        <button onclick="cancelLocationFilter()">Cancel</button>
+    </div>
+    <div class="post Shirts" data-location="Tel Aviv">
+        <a href="Product.html">
+        <img class="pics" src="images/Poncho.png"/>
+        </a>
+        <span class="price">20₪</span>
+        <div class="ButCont">
+        <button class="heartBut">
+            <img src="images/like.png">
+        </button>
+        </div>
+    </div>
+    <div class="post Jackets" data-location="Tel Aviv">
+        <img class="pics" src="images/jacket.png"/>
+        <span class="price">100₪</span>
+        <div class="ButCont">
+            <button class="heartBut">
+                <img src="images/liked.png">
+            </button>
+            </div>
+    </div>
+    <div class="post Jewelery" data-location="Jerusalem">
+        <img class="pics" src="images/earrings.png"/>
+        <span class="price">200₪</span>
+        <div class="ButCont">
+            <button class="heartBut">
+                <img src="images/like.png">
+            </button>
+            </div>
+    </div>
+    <div class="post Shirts" data-location="Ra'anana">
+        <img class="pics" src="images/shirt.png"/>
+        <span class="price">15₪</span>
+        <div class="ButCont">
+            <button class="heartBut">
+                <img src="images/like.png">
+            </button>
+            </div>
+    </div>
+    <div class="post Shirts" data-location="Rehovot">
+        <img class="pics" src="images/shirt2.png"/>
+        <span class="price">15₪</span>
+        <div class="ButCont">
+            <button class="heartBut">
+                <img src="images/like.png">
+            </button>
+            </div>
+    </div>
+    <div class="post Sweatshirts" data-location="Rehovot">
+        <img class="pics" src="images/sweatshirt.png"/>
+        <span class="price">40₪</span>
+        <div class="ButCont">
+            <button class="heartBut">
+                <img src="images/like.png">
+            </button>
+            </div>
+    </div>
+    <div class="post Jackets" data-location="Ra'anana">
+        <img class="pics" src="images/jeanjacket.png"/>
+        <span class="price">90₪</span>
+        <div class="ButCont">
+            <button class="heartBut">
+                <img src="images/like.png">
+            </button>
+            </div>
+    </div>
+    <div class="post Jackets" data-location="Tel Aviv">
+        <img class="pics" src="images/blazer.png"/>
+        <span class="price">120₪</span>
+        <div class="ButCont">
+            <button class="heartBut">
+                <img src="images/like.png">
+            </button>
+            </div>
+    </div>
+    <footer class="Exfooter">
+        <span>Page 1 of 3</span>
+    </footer>
+    <script src="sideBar.js"></script>
+    <script src="explore.js"></script>
+</body>

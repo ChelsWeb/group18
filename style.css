@@ -1,0 +1,575 @@
+.logo{
+    text-align: center;
+}
+#logo{
+    border-radius: 50%;
+    width: 300px;
+    height: 150px;
+}
+body {
+    background-color: #efead6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+.line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+}
+.sidebar .logo {
+    text-align: center;
+    padding: 60px 0;
+    
+}
+
+.sidebar .logo img {
+    width: 120px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: #bab393;
+    padding-top: 20px;
+    transition: left 0.3s ease;
+    z-index: 2;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 8px;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color:#efead6;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; 
+    transition: left 0.3s ease; 
+}
+
+.FavCont {
+    margin-left: 200px; 
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar.active ~ .FavCont {
+    margin-left: 0;
+}
+
+.sidebar.active + .toggle-btn .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.sidebar.active + .toggle-btn .line:nth-child(2) {
+    opacity: 0;
+}
+
+.sidebar.active + .toggle-btn .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.sidebar.active + .toggle-btn .line {
+    background-color: #fff;
+}
+
+
+/*Registiration*/
+.form{
+    text-align: center;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+#signupButton{
+    cursor: pointer;
+}
+#signupButton:hover {
+    text-decoration: underline; 
+}
+#butCont{
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+
+/*Login*/
+.Lcontainer{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.loginFooter{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+footer span{
+    margin-right: 5px;
+}
+#signUp{
+    cursor: pointer;
+    color: blue;
+    
+}
+#signUp:hover {
+    text-decoration: underline; 
+}
+.box{
+    margin-left: 5px;
+}
+.LogLabel {
+    width: 100px; 
+    text-align: right; 
+    margin-right: 10px; 
+}
+/*Explore*/
+.ExCont{
+    text-align: center;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 40px;
+    width: 100%;
+    
+}
+td{
+    background-color: white;
+    width: 15;
+    height: 200px;
+    padding: 10px;
+}
+.pics{ 
+    width: 200px; 
+      height: 70%;
+      display: block;
+      margin: 0 auto;  
+      margin-bottom: 20px;
+       
+}
+.price{
+    margin-left: 20px;
+    display: block;
+    
+}
+.heartBut{
+    background: none;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; 
+    align-items: right;
+ 
+  }
+  .heartBut img{
+    width: 40px; 
+    height: 40px; 
+    vertical-align: middle;
+  }
+  .ButCont{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1px; 
+    margin-right: 1px;
+  }
+
+  .page-numbers {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.location{
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+.dropDown{
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+.post{
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    margin-left: 90px;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+}
+.Exfooter{
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 95%;
+    height: 13px;
+    padding-top: 20px;
+    background-color: #efead6;
+    margin-bottom: 0;
+}
+.Exfooter span {
+margin-bottom: 0;
+    position: relative;
+    top: -5px; 
+}
+
+/*Favorites*/
+.FavCont{
+    text-align: center;
+}
+.liked{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    display: inline-block;
+}
+footer{
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 95%;
+    height: 13px;
+    padding-top: 20px;
+    background-color: #efead6;
+    margin-bottom: 10px;
+    
+}
+footer span {
+    position: relative;
+    top: -5px; 
+}
+
+/*Product*/
+.ProdCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: 60px;
+    margin-top: 70px;
+}
+.product-details {
+    flex: 1;
+    padding-left: 20px;
+    align-self: flex-start;
+}
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+.seller-image {
+    position: relative;
+    top: 5px; 
+    left: 1px; 
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+}
+.seller-details a {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #efead6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.seller-details a:hover {
+    background-color: #bab393;
+}
+
+.product-image-container {
+    flex: 1;
+    position: relative;
+    width: 300px;
+}
+/*seller*/
+.seller-info {
+    display: flex;
+    align-items: center;
+}
+
+.seller-details {
+    margin-left: 20px;
+}
+#sellerImg{
+    border: 7px solid white;
+    border-radius: 5%;
+}
+
+.rating-box,
+.products-box,
+.phone {
+    margin-top: 5px;
+}
+.sellerHeader{
+    text-align: left;
+}
+.ReviewHeader{
+    color: #333;
+    text-align: left;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+
+.product-post {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.product-post img {
+    float: right;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.review {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.RevCont{
+    margin-left: 60px;
+    margin-top: 100px;
+}
+.review {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 500px;
+}
+.submitBut{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #bab393;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submitBut:hover{
+    background-color: #0056b3;
+}
+
+.review #man {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+#stars{
+    width: 150px;
+}
+
+.review-details {
+    flex: 1;
+}
+
+.review-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-text {
+    margin-bottom: 10px;
+}
+#add-review-form{
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 500px;
+}
+
+.product-posts {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+.product-post {
+    position: relative; 
+    margin: 0 20px 20px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+}
+.corner-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.product-post img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.product-description {
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product-post img.corner-img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+/*My Account*/
+.AccountCont{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.accountHeader{
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.AccountLabel {
+    font-weight: bold;
+}
+.accounText {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.AccountBut {
+    padding: 10px 20px;
+    background-color: #bab393;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.AccountBut:hover {
+    background-color: #0056b3;
+}
+/*Upload Product*/
+.uploadCont{
+    margin-left: 80px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.upload-button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #bab393;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.upload-button:hover{
+    background-color: #0056b3;
+}
+
